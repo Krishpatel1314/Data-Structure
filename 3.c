@@ -1,15 +1,25 @@
+// Implement a program for stack that performs following operations
+// using array.
+// a. PUSH
+// b. POP
+// c. PEEP
+// d. CHANGE
+// e. DISPLAY
+
 #include<stdio.h>
 #include<conio.h>
 #define n 5
 int top=-1,stack[n];
 void push();
-void pull();
+void pop();
 void display();
+void peep();
+void change();
 int main()
 {
     int i,ch;
-    printf("1)Push \n 2)Pop\n 3)Peep\n 4)Change\n 5)Display");
-    while(ch!=6)
+    printf("1)Push\n2)Pop\n3)Peep\n4)Change\n5)Display\n6)Exit");
+    do
     {
        printf("\nEnter the choice:");
        scanf("%d",&ch);
@@ -28,7 +38,7 @@ int main()
            default:
            printf("Invalid Input");
        }
-    }
+    }while(ch!=6);
     getch();
 }
 

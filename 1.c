@@ -1,11 +1,12 @@
+//Implement a program to insert, delete and search an element from
+//array.
 #include<conio.h>
 #include<stdio.h>
 int main()
 {
     int i,a[20],n,ch,m,s,f=0,p,e;
-    printf("1)Create an array \n2)Insert an elemnt\n3)Delete an element\n4)Search an element\n5)Display");
-    
-    while(ch!=6)
+    printf("1)Create an array \n2)Insert an elemnt\n3)Delete an element\n4)Search an element\n5)Display\n6)Exit");
+    while(ch!=7)
     {
         printf("\nEnter the choice:");
         scanf("%d",&ch);
@@ -60,6 +61,8 @@ int main()
             {
                 printf("%d ",a[i]);
             }
+            break;
+            case 6:
             break;
             default:
             printf("Invalid Input!!");
