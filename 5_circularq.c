@@ -1,3 +1,8 @@
+/*Write a program to implement  CIRCULAR 
+QUEUE using arrays that performs following operations: 
+a. INSERT 
+b. DELETE 
+c. DISPLAY*/
 #include<stdio.h>
 #define n 5
 

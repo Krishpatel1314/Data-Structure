@@ -1,3 +1,12 @@
+/*Write a menu driven program to implement following operations 
+on the singly linked list. 
+a. Insert a node at the front of the linked list. 
+b. Insert a node at the end of the linked list. 
+c. Insert a node after a given node.
+d. Insert a node before a given node.
+e. Delete a first node of the linked list. 
+f. Delete a node before specified position. 
+g. Delete a node after specified position.*/
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
@@ -140,7 +149,6 @@ void i_afternode()
     temp->next=new;    
     printf("%d Inserted after %d",item,val);
 }       
-
 void i_beforenode()
 {
     struct node *new,*temp,*pre;
